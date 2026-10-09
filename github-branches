@@ -1,0 +1,32 @@
+$ git branch -a
+  bug-fix-typo
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/bug-fix-typo
+  remotes/origin/main
+  remotes/upstream/HEAD -> upstream/main
+  remotes/upstream/main
+
+$ git branch -vv
+  bug-fix-typo dcd6bcb [origin/bug-fix-typo] Fix typo in README.md: add colon to Output
+* main         dcd6bcb [origin/main] Fix typo in README.md: add colon to Output
+
+$ curl -s https://api.github.com/repos/Darun77/mcino-Introduction-to-Git-and-GitHub/branches
+[
+  {
+    "name": "bug-fix-typo",
+    "commit": {
+      "sha": "dcd6bcba6e018b55e4d0ccc3a69d39c75380b194",
+      "url": "https://api.github.com/repos/Darun77/mcino-Introduction-to-Git-and-GitHub/commits/dcd6bcba6e018b55e4d0ccc3a69d39c75380b194"
+    },
+    "protected": false
+  },
+  {
+    "name": "main",
+    "commit": {
+      "sha": "dcd6bcba6e018b55e4d0ccc3a69d39c75380b194",
+      "url": "https://api.github.com/repos/Darun77/mcino-Introduction-to-Git-and-GitHub/commits/dcd6bcba6e018b55e4d0ccc3a69d39c75380b194"
+    },
+    "protected": false
+  }
+]
